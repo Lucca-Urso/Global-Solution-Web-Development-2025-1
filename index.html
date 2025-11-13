@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkConnect User Forms</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img src="./icon/bag_icon.svg" alt="workConnect Icon" class="icon">
+        <div id="header_div">
+            <h1>WorkConnect</h1>
+            <h3>Rede para Freelancers do Futuro</h3>
+        </div>
+    </header>
+    <form>
+        <!--Personal Information Section-->
+        <label for="name">Nome Completo</label><br>
+        <input type="text" value="Digite seu nome completo"><br>
+        
+        <label for="cpf">CPF</label><br>
+        <input type="text" value="000.000.000-00"><br>
+
+        <label for="name">E-mail</label><br>
+        <input type="email" value="seu@email.com"><br>
+
+        <!--Role Interest Section-->
+        <label for="interest">Tipo de Interesse</label><br>
+        <input type="radio">Freelancer<br>
+        <input type="radio">Startup<br>
+        <input type="radio">Trabalho Remoto<br>
+        <input type="radio">Trabalho Híbrido<br>
+
+        <!--Skills Section-->
+        <label for="skills">Habilidades</label><br>
+        <input type="text" value="Digite uma habilidade"><br>
+        <button>+ Adicionar</button>
+
+        <div class="suggestion_div">
+            <label for="suggestions">Sugestões</label>
+            <div id="suggestion_buttons">
+                <input class="suggestion" type="button" value="Programação">
+                <input class="suggestion" type="button" value="Design">
+                <input class="suggestion" type="button" value="Marketing">
+                <input class="suggestion" type="button" value="Copywriting">
+                <input class="suggestion" type="button" value="Gestão de Projetos">
+                <input class="suggestion" type="button" value="UI/UX Design">
+                <input class="suggestion" type="button" value="Análise de Dados">
+            </div>
+        </div>
+
+        <div class="user_skills">
+            <label for="skills">Suas Habilidades</label>
+            <div class="selected_skills">
+                <label class="skill">Programação</label>
+            </div>
+        </div>
+
+        <!--Register User Button-->
+        <button class="register_button">Cadastrar Profissional</button>
+    </form>
+</body>
+</html>

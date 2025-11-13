@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F1E8;
+}
+
+header {
+    background-color: #3B82F6;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header_div {
+    margin: 1% 0 2% 2%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.icon {
+    filter: brightness(0) invert(1);
+    width: 6%;
+    margin: 1% 0 0 2%;
+}
+
