@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+height: 100%;
+}
+
 body {
-    background-color: #F5F1E8;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 header {
@@ -14,23 +20,165 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 15px 2%;   
 }
 
 #header_div {
-    margin: 1% 0 2% 2%;
+    margin-left: 15px;
 }
 
 h1 {
     font-size: 60px;
+    margin: 0;
 }
 
 h3 {
     font-size: 30px;
+    margin: 0;
 }
 
 .icon {
     filter: brightness(0) invert(1);
-    width: 6%;
-    margin: 1% 0 0 2%;
+    height: 60px;
+    width: auto; 
 }
 
+main {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0; 
+    background-color: #f7f3e9;
+}
+
+form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --- SEÇÃO: Estilos dos Campos e Labels --- */
+
+form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px; /* ADICIONADO: Espaçamento entre a label e o próximo item */
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #ffffff; 
+    font-size: 1rem;
+}
+
+/* --- SEÇÃO: Estilos dos Rádios ("Tipo de Interesse") --- */
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 10px; /* ADICIONADO: Espaço abaixo do grupo de rádios */
+}
+
+.radio-label-box {
+    display: flex; 
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff; 
+    font-weight: normal; 
+    cursor: pointer;
+}
+
+.radio-label-box input[type="radio"] {
+    margin-right: 10px; 
+}
+
+/* --- SEÇÃO: Estilos da Seção "Habilidades" --- */
+
+.skills-add-group {
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 10px; /* ADICIONADO: Espaço abaixo do campo de habilidades */
+}
+
+.skills-add-group input[type="text"] {
+    flex-grow: 1; 
+}
+
+/* --- SEÇÃO: Estilos dos Botões --- */
+
+form button,
+form input.suggestion {
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Botão "+ Adicionar" (azul) */
+.skills-add-group button {
+    padding: 10px 15px; /* ALTERADO: Padding igual ao dos suggestions */
+    background-color: #3B82F6;
+    color: white;
+    font-weight: bold; /* ADICIONADO: Deixei bold para combinar com a imagem */
+    flex-shrink: 0; 
+}
+
+/* --- SEÇÃO NOVA/ALTERADA: Estilos da Div de Sugestões --- */
+.suggestion_div {
+    background-color: #f8f8f8; /* ALTERADO: Fundo mais claro para a caixa inteira */
+    border: 1px solid #e0e0e0; /* ADICIONADO: Borda para a caixa */
+    border-radius: 8px; /* ADICIONADO: Cantos arredondados */
+    padding: 15px; /* ADICIONADO: Espaçamento interno */
+    display: flex; /* ADICIONADO: Para alinhar a label e os botões */
+    flex-direction: column; /* ADICIONADO: Itens um abaixo do outro */
+    gap: 10px; /* ADICIONADO: Espaço entre a label e os botões */
+    margin-top: 5px; /* ALTERADO: Um pouco mais de espaço acima, se necessário */
+}
+
+/* Estilo para a label "Sugestões:" dentro da caixa */
+.suggestion_div label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0; /* ALTERADO: Removido o margin-bottom pois o gap já resolve */
+}
+
+
+/* Botões de "Sugestões" (cinza) */
+#suggestion_buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px;
+}
+
+form input.suggestion {
+    padding: 8px 12px; /* ALTERADO: Padding menor */
+    background-color: #e0e0e0; /* ALTERADO: Fundo cinza claro */
+    color: #333;
+    font-weight: normal; /* ALTERADO: Fonte normal */
+    border: 1px solid #ccc; /* ADICIONADO: Borda sutil */
+}
+
+/* Botão "Cadastrar Profissional" (azul, grande) */
+form .register_button {
+    background-color: #3B82F6;
+    color: white;
+    width: 100%; 
+    padding: 15px; 
+    font-size: 1.1rem;
+    margin-top: 20px; /* ALTERADO: Mais espaço acima do botão final */
+    font-weight: bold; /* ADICIONADO: Ficou mais forte na imagem */
+}
