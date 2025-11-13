@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkConnect User Forms</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./form-validator.js"></script>
 </head>
 <body>
     <header>
@@ -18,16 +19,16 @@
         <form>
             <!--Personal Information Section-->
             <label for="name">Nome Completo</label>
-            <input type="text" id="name" value="Digite seu nome completo">
+            <input type="text" id="name" placeholder="Digite seu nome completo">
             
             <label for="cpf">CPF</label>
-            <input type="text" id="cpf" value="000.000.000-00">
+            <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="11" inputmode="numeric">
 
             <label for="email">E-mail</label>
-            <input type="email" id="email" value="seu@email.com">
+            <input type="email" id="email" placeholder="seu@email.com">
 
             <!--Role Interest Section-->
-            <label for="interest">Tipo de Interesse</label> 
+            <label>Tipo de Interesse</label> 
             <div class="radio-group">
                 <label class="radio-label-box">
                     <input type="radio" name="interest"> Freelancer
@@ -44,14 +45,14 @@
             </div>
 
             <!--Skills Section-->
-            <label for="skills">Habilidades</label>
+            <label>Habilidades</label>
             <div class="skills-add-group">
-                <input type="text" id="skills" value="Digite uma habilidade">
-                <button type="button">+ Adicionar</button> 
+                <input type="text" id="skills" placeholder="Digite uma habilidade">
+                <button type="button" onclick="submitForm()">+ Adicionar</button> 
             </div>
 
             <div class="suggestion_div">
-                <label for="suggestions">Sugestões</label>
+                <label>Sugestões</label>
                 <div id="suggestion_buttons">
                     <input class="suggestion" type="button" value="Programação">
                     <input class="suggestion" type="button" value="Design">
@@ -65,7 +66,7 @@
             </div>
 
             <!--Register User Button-->
-            <button class="register_button">Cadastrar Profissional</button>
+            <button type="button" class="register_button" onclick="submitForm()">Cadastrar Profissional</button>
         </form>
     </main>
 </body>

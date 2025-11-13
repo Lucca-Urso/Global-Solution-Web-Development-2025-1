@@ -91,6 +91,10 @@ form input[type="email"] {
     margin-bottom: 10px; /* ADICIONADO: Espaço abaixo do grupo de rádios */
 }
 
+.radio-label-box:hover {
+    border: 3px solid #ccc
+}
+
 .radio-label-box {
     display: flex; 
     align-items: center;
@@ -100,6 +104,7 @@ form input[type="email"] {
     background-color: #ffffff; 
     font-weight: normal; 
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 
 .radio-label-box input[type="radio"] {
@@ -129,12 +134,22 @@ form input.suggestion {
 }
 
 /* Botão "+ Adicionar" (azul) */
+.skills-add-group button:hover {
+    transform: scale(1.1);
+}
+
+.skills-add-group button:active {
+    background-color: aquamarine;
+    transform: scale(1.15);
+}
+
 .skills-add-group button {
     padding: 10px 15px; /* ALTERADO: Padding igual ao dos suggestions */
     background-color: #3B82F6;
     color: white;
     font-weight: bold; /* ADICIONADO: Deixei bold para combinar com a imagem */
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 /* --- SEÇÃO NOVA/ALTERADA: Estilos da Div de Sugestões --- */
@@ -164,15 +179,28 @@ form input.suggestion {
     gap: 8px;
 }
 
+form input.suggestion:hover {
+    transform: scale(1.05);
+}
+
+form input.suggestion:active {
+    background-color: #6ca3fd;
+}
+
 form input.suggestion {
     padding: 8px 12px; /* ALTERADO: Padding menor */
     background-color: #e0e0e0; /* ALTERADO: Fundo cinza claro */
     color: #333;
     font-weight: normal; /* ALTERADO: Fonte normal */
     border: 1px solid #ccc; /* ADICIONADO: Borda sutil */
+    transition: all 0.1s ease-in-out;
 }
 
 /* Botão "Cadastrar Profissional" (azul, grande) */
+form .register_button:active {
+    background-color: aquamarine;
+}
+
 form .register_button {
     background-color: #3B82F6;
     color: white;
@@ -181,4 +209,5 @@ form .register_button {
     font-size: 1.1rem;
     margin-top: 20px; /* ALTERADO: Mais espaço acima do botão final */
     font-weight: bold; /* ADICIONADO: Ficou mais forte na imagem */
+    transition: all 0.2s ease-in-out;
 }
