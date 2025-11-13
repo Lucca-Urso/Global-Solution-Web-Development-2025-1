@@ -64,12 +64,10 @@ form {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* --- SEÇÃO: Estilos dos Campos e Labels --- */
-
 form label {
     font-weight: bold;
     color: #555;
-    margin-bottom: 5px; /* ADICIONADO: Espaçamento entre a label e o próximo item */
+    margin-bottom: 5px;
 }
 
 form input[type="text"],
@@ -82,13 +80,11 @@ form input[type="email"] {
     font-size: 1rem;
 }
 
-/* --- SEÇÃO: Estilos dos Rádios ("Tipo de Interesse") --- */
-
 .radio-group {
     display: flex;
     flex-direction: column;
     gap: 10px; 
-    margin-bottom: 10px; /* ADICIONADO: Espaço abaixo do grupo de rádios */
+    margin-bottom: 10px;
 }
 
 .radio-label-box:hover {
@@ -111,19 +107,15 @@ form input[type="email"] {
     margin-right: 10px; 
 }
 
-/* --- SEÇÃO: Estilos da Seção "Habilidades" --- */
-
 .skills-add-group {
     display: flex; 
     gap: 10px;
-    margin-bottom: 10px; /* ADICIONADO: Espaço abaixo do campo de habilidades */
+    margin-bottom: 10px;
 }
 
 .skills-add-group input[type="text"] {
     flex-grow: 1; 
 }
-
-/* --- SEÇÃO: Estilos dos Botões --- */
 
 form button,
 form input.suggestion {
@@ -133,7 +125,6 @@ form input.suggestion {
     cursor: pointer;
 }
 
-/* Botão "+ Adicionar" (azul) */
 .skills-add-group button:hover {
     transform: scale(1.1);
 }
@@ -144,35 +135,31 @@ form input.suggestion {
 }
 
 .skills-add-group button {
-    padding: 10px 15px; /* ALTERADO: Padding igual ao dos suggestions */
+    padding: 10px 15px;
     background-color: #3B82F6;
     color: white;
-    font-weight: bold; /* ADICIONADO: Deixei bold para combinar com a imagem */
+    font-weight: bold; 
     flex-shrink: 0;
     transition: all 0.2s ease-in-out;
 }
 
-/* --- SEÇÃO NOVA/ALTERADA: Estilos da Div de Sugestões --- */
 .suggestion_div {
-    background-color: #f8f8f8; /* ALTERADO: Fundo mais claro para a caixa inteira */
-    border: 1px solid #e0e0e0; /* ADICIONADO: Borda para a caixa */
-    border-radius: 8px; /* ADICIONADO: Cantos arredondados */
-    padding: 15px; /* ADICIONADO: Espaçamento interno */
-    display: flex; /* ADICIONADO: Para alinhar a label e os botões */
-    flex-direction: column; /* ADICIONADO: Itens um abaixo do outro */
-    gap: 10px; /* ADICIONADO: Espaço entre a label e os botões */
-    margin-top: 5px; /* ALTERADO: Um pouco mais de espaço acima, se necessário */
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px; 
 }
 
-/* Estilo para a label "Sugestões:" dentro da caixa */
 .suggestion_div label {
     font-weight: bold;
     color: #555;
-    margin-bottom: 0; /* ALTERADO: Removido o margin-bottom pois o gap já resolve */
+    margin-bottom: 0;
 }
 
-
-/* Botões de "Sugestões" (cinza) */
 #suggestion_buttons {
     display: flex;
     flex-wrap: wrap; 
@@ -188,15 +175,14 @@ form input.suggestion:active {
 }
 
 form input.suggestion {
-    padding: 8px 12px; /* ALTERADO: Padding menor */
-    background-color: #e0e0e0; /* ALTERADO: Fundo cinza claro */
+    padding: 8px 12px;
+    background-color: #e0e0e0;
     color: #333;
-    font-weight: normal; /* ALTERADO: Fonte normal */
-    border: 1px solid #ccc; /* ADICIONADO: Borda sutil */
+    font-weight: normal;
+    border: 1px solid #ccc;
     transition: all 0.1s ease-in-out;
 }
 
-/* Botão "Cadastrar Profissional" (azul, grande) */
 form .register_button:active {
     background-color: aquamarine;
 }
@@ -207,7 +193,7 @@ form .register_button {
     width: 100%; 
     padding: 15px; 
     font-size: 1.1rem;
-    margin-top: 20px; /* ALTERADO: Mais espaço acima do botão final */
-    font-weight: bold; /* ADICIONADO: Ficou mais forte na imagem */
+    margin-top: 20px;
+    font-weight: bold;
     transition: all 0.2s ease-in-out;
 }
