@@ -176,8 +176,8 @@ form input.suggestion:hover {
     transform: scale(1.05);
 }
 
-form input.suggestion:active {
-    background-color: #6ca3fd;
+form input.suggestion:visited {
+    background-color: #377be9;
 }
 
 form input.suggestion {

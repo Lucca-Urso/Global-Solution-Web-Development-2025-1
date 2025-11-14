@@ -1,20 +1,23 @@
+let userSkills = [];
+
 function getUserInformations() {
     let name = document.getElementById("name").value;
     let cpf = document.getElementById("cpf").value;
     let email = document.getElementById("email").value;
-    let interest = document.getElementsByName("radio-interest");
+    let interest = document.querySelector('input[name="interest"]:checked')?.value;
     
     return {
         "name": validateUserName(name),
         "cpf": validateUserCpf(cpf),
         "email": validateUserEmail(email),
-        "interest": interest
+        "interest": interest,
+        "skills": userSkills
     }
 }
 
 function validateUserName(userName) {
     if (/\d/.test(userName)) {
-        throw Error("Incorrect Input: Username must not contain numeric characters");
+        throw Error("Campo Inválido: O nome do usuário deve conter apenas dígitos.");
     }
 
     for (i = 0; i < userName.length; i++) {
@@ -25,16 +28,16 @@ function validateUserName(userName) {
         }
     }
 
-    return Error("Incorrect Username: Username must contain second name");
+    throw Error("Campo Inválido: O nome do usuário deve conter sobrenome.");
 }
 
 function validateUserCpf(userCpf) {
     if (!/\d/.test(userCpf)) {
-        throw Error("Incorrect Input: CPF must only contain digits");
+        throw Error("Campo Inválido: O CPF deve conter apenas dígitos.");
     }
 
     if (userCpf.length < 11) {
-        throw Error("Incorrect Input: CPF must contains 11 digits");
+        throw Error("Campo Inválido: O CPF deve conter 11 dígitos.");
     }
 
     return userCpf;
@@ -42,20 +45,34 @@ function validateUserCpf(userCpf) {
 
 function validateUserEmail(userEmail) {
     if (!userEmail.includes("@") || !userEmail.includes("."))
-        throw Error("Invalid Input: Email format is invalid.")
+        throw Error("Campo Inválido: Formato de email inválido.")
 
     let atIndex = userEmail.indexOf("@", 0) + 3;
     let dotIndex = userEmail.indexOf(".", atIndex);
 
     for (i = 0; i < userEmail.length; i++) {
         if (userEmail[i] == " ") 
-            throw Error("Invalid Input: Email must not contain spaces.");
+            throw Error("Campo Inválido: O email não pode conter espaços.");
 
         if (dotIndex > atIndex && dotIndex < userEmail.length - 1)
             return userEmail;
     }
 
-    throw Error("Invalid Input: Email address does not exist.");
+    throw Error("Campo Inválido: Endereço de email não reconhecido.");
+}
+
+function getSkillFromText() {
+    let skill = document.getElementById("skills").value;
+    
+    if (/\d/.test(skill))
+        throw Error("Campo Inválido: Habilidade não pode conter dígitos.");
+
+    userSkills.push(skill);
+    document.getElementById("skills").value = "";
+}
+
+function getSkillFromButton(skill) {
+    userSkills.push(skill);
 }
 
 function submitForm() {

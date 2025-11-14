@@ -31,16 +31,16 @@
             <label>Tipo de Interesse</label> 
             <div class="radio-group">
                 <label class="radio-label-box">
-                    <input type="radio" name="interest"> Freelancer
+                    <input type="radio" name="interest" value="freelancer"> Freelancer
                 </label>
                 <label class="radio-label-box">
-                    <input type="radio" name="interest"> Startup
+                    <input type="radio" name="interest" value="startup"> Startup
                 </label>
                 <label class="radio-label-box">
-                    <input type="radio" name="interest"> Trabalho Remoto
+                    <input type="radio" name="interest" value="remoto"> Trabalho Remoto
                 </label>
                 <label class="radio-label-box">
-                    <input type="radio" name="interest"> Trabalho Híbrido
+                    <input type="radio" name="interest" value="hibrido"> Trabalho Híbrido
                 </label>
             </div>
 
@@ -48,20 +48,20 @@
             <label>Habilidades</label>
             <div class="skills-add-group">
                 <input type="text" id="skills" placeholder="Digite uma habilidade">
-                <button type="button" onclick="submitForm()">+ Adicionar</button> 
+                <button type="button" onclick="getSkill()">+ Adicionar</button> 
             </div>
 
             <div class="suggestion_div">
                 <label>Sugestões</label>
                 <div id="suggestion_buttons">
-                    <input class="suggestion" type="button" value="Programação">
-                    <input class="suggestion" type="button" value="Design">
-                    <input class="suggestion" type="button" value="Marketing">
-                    <input class="suggestion" type="button" value="Copywriting">
-                    <input class="suggestion" type="button" value="Gestão de Projetos">
-                    <input class="suggestion" type="button" value="UI/UX Design">
-                    <input class="suggestion" type="button" value="Análise de Dados">
-                    <input class="suggestion" type="button" value="Vendas">
+                    <input class="suggestion" type="button" value="Programação" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="Design" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="Marketing" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="Copywriting" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="Gestão de Projetos" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="UI/UX Design" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="Análise de Dados" onclick="getSkillFromButton(this.value)">
+                    <input class="suggestion" type="button" value="Vendas" onclick="getSkillFromButton(this.value)">
                 </div>
             </div>
 
