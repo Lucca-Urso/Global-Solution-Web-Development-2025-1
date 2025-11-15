@@ -149,6 +149,21 @@ form input.suggestion {
     transition: all 0.2s ease-in-out;
 }
 
+form input.user_skill:hover {
+    transform: scale(1.05);
+}
+
+form input.user_skill {
+    padding: 8px 12px;
+    margin: 6px 5px 0 0;
+    background-color: #3B82F6;
+    color: #f8f8f8;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.13s ease-in-out;
+}
+
 .suggestion_div {
     background-color: #f8f8f8;
     border: 1px solid #e0e0e0;
@@ -174,10 +189,6 @@ form input.suggestion {
 
 form input.suggestion:hover {
     transform: scale(1.05);
-}
-
-form input.suggestion:visited {
-    background-color: #377be9;
 }
 
 form input.suggestion {
