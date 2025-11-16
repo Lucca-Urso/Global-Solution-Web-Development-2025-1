@@ -63,3 +63,14 @@ A estrutura de arquivos do projeto é simples e direta:
     └── 📄 bag_icon.svg   (Ícone usado no cabeçalho)
 
 ```
+## 👥 Participantes
+
+Nome	RM
+Gustavo Moretim Canzi	RM567683
+Lucca Ghiraldi Urso	RM556739
+
+## 🌐 Acesse o Projeto Online
+
+O formulário está disponível através do GitHub Pages:
+
+🔗 [Acesse aqui]("ALTERAR")
