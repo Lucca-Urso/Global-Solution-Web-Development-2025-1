@@ -214,3 +214,11 @@ form .register_button {
     font-weight: bold;
     transition: all 0.2s ease-in-out;
 }
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    min-height: 1.2em;
+    margin-bottom: 5px;
+}

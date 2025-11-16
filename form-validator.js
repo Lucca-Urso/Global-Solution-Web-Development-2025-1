@@ -136,9 +136,16 @@ function removeSelectedSkillFromDiv(button, skill) {
 }
 
 function submitForm() {
+    let errorDisplay = document.getElementById("form-error");
+    errorDisplay.innerText = "";
+    errorDisplay.style.color = "#d9534f";
+
     try {
-        console.log(getUserInformations());
+        let userData = getUserInformations();
+        console.log(userData);
+        errorDisplay.innerText = "Cadastro realizado com sucesso!";
+        errorDisplay.style.color = "#5cb85c";
     } catch (error) {
-        alert(error.message);
+        errorDisplay.innerText = error.message;
     }
 }
