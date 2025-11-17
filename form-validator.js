@@ -152,6 +152,7 @@ function submitForm() {
     } else {
         exibirFeedback(null);
         console.log("Dados validados com sucesso:", { name, cpf, email, interest, skills: userSkills });
+        setTimeout(() => location.reload(), 2000);
     }
 }
 
