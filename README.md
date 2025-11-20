@@ -74,4 +74,4 @@ A estrutura de arquivos do projeto é simples e direta:
 
 O formulário está disponível através do GitHub Pages:
 
-🔗 [Acesse aqui]("ALTERAR")
+🔗 [Acesse aqui](https://lucca-urso.github.io/Global-Solution-Web-Development-2025-1/)
