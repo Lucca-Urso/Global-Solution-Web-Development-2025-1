@@ -68,7 +68,7 @@ A estrutura de arquivos do projeto é simples e direta:
 | Nome                           | RM       |
 | ------------------------------ | -------- |
 | **Gustavo Moretim Canzi**      | RM567683 |
-| **Lucca Ghiraldi Urso**        | RM556739 |
+| **Lucca Ghiraldi Urso**        | RM566739 |
 
 ## 🌐 Acesse o Projeto Online
 
